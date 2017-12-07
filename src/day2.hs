@@ -23,13 +23,3 @@ rowDivisors nums = do
   let d = i `div` j
   guard (d /= 1)
   pure d
-
-
-
-
-
-  -- [d | i <- nums,
-  --                       j <- nums,
-  --                       i `mod` j == 0
-  --                       let d = i `div` j,
-  --                       d /= 1]
